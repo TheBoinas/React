@@ -43,4 +43,5 @@ bot = MeuPrimeiroBot()
 async def olamundo(interaction: discord.Interaction):
     await interaction.response.send_message(f"Olá {interaction.user.mention}")
 
-bot.run("MTM0NDQ3NDU0ODgxNjU4MDY0OA.G0cZAv.gr4ggqT8XtlmlJDT0AwbJjqgZPsBMrxbMlzFfA")
+import os
+bot.run(os.getenv("TOKEN"))
